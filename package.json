@@ -1,0 +1,27 @@
+{
+  "name": "monarchwadia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "new": "node src/script/new.js",
+    "test": "mocha",
+    "tdd": "mocha -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "mocha": "^6.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
